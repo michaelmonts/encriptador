@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Encriptar y Desencriptar</title> 
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.17/dist/sweetalert2.all.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="https://www.aluracursos.com"><img src="imagenes/icono.jpg" alt="github"></a>
+    </div>
+    <div class="logo">
+      <a href="https://github.com/michaelmonts"><img src="imagenes/github-mark.png" alt="Logo 2"></a>
+    </div>
+    <div class="logo">
+      <a href="https://www.linkedin.com/in/jhonmontes/"><img src="imagenes/lin.png" alt="Logo 3"></a>
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <textarea class="areaTexto" placeholder="Ingrese texto aquí" id="textArea" cols="30" rows="10"></textarea>
+      <div class="botones">
+        <p>
+          &#9888; Solo letras minúsculas y sin acentos 
+        </p>
+        <button id="btnEncriptar" class="btn-encriptar">Encriptar</button>
+        <button id="btnDesencriptar" class="btn-desencriptar">Desencriptar</button>
+      </div>
+    </section>
+    <section class="encriptado">
+      <div class="textofinal">
+        <textarea readonly="" class="areaEncriptado" name="" id="encriptadoArea" cols="20" rows="10"></textarea>
+        <div id="container" class="container">
+          <div class="image-overlay" id="imageOverlay">
+            <img src="imagenes/Muñeco.png" alt="Imagen">
+            <center>
+              <h1>Ningún mensaje fue encontrado</h1>
+            </center>
+          </div>
+        </div>
+        <div class="conten-buton">
+          <button id="copy" class="btn-copiar">Copiar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
