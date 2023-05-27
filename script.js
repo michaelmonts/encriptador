@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
     getContentAndCheck();
 
     // Desencripta el texto encriptado según las reglas establecidas
-    let textoEncriptado = textArea2.value.toLowerCase();
+    let textoEncriptado = textArea.value.toLowerCase();
     var textoDesencriptado = textoEncriptado.replace(/enter/igm, "e")
                                             .replace(/imes/igm, "i")
                                             .replace(/ai/igm, "a")
